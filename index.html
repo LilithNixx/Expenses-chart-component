@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+  
+  <link rel="StyleSheet" href= "/sass/styles.css"  type= "text/css"> 
+  <!--FONT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="my-balance-container">
+    <div class="balance">
+      <p class="p-title">My balance</p>
+      <p class="p-num">$<span id="balance-num">921.48</span></p>
+    </div>
+    <img src="./images/logo.svg" alt="circle">
+  </header>
+  
+  <main class="spending-container">
+    <h1>Spending - Last 7 days</h1>
+    <div class="bars-container">
+          <div class="day-info">
+            <p class="amount">$<span class="amount-value" data-value="0">00.00</span></p>
+            <div class="day-bar" id="mon"></div>
+            <p class="day-text">mon</p>
+          </div>
+          <div class="day-info">
+            <p class="amount">$<span class="amount-value" data-value="1">00.00</span></p>
+            <div class="day-bar" id="tue"></div>
+            <p class="day-text">tue</p>
+          </div>
+          <div class="day-info">
+            <p class="amount">$<span class="amount-value" data-value="2">00.00</span></p>
+            <div class="day-bar" id="wed"></div>
+            <p class="day-text">wed</p>      
+          </div>
+          <div class="day-info">
+            <p class="amount">$<span class="amount-value" data-value="3">00.00</span></p>
+            <div class="day-bar" id="thu"></div>
+            <p class="day-text">thu</p>         
+          </div>
+          <div class="day-info">
+            <p class="amount">$<span class="amount-value" data-value="4">00.00</span></p>
+            <div class="day-bar" id="fri"></div>
+            <p class="day-text">fri</p>           
+          </div>
+          <div class="day-info">
+            <p class="amount">$<span class="amount-value" data-value="5">00.00</span></p>
+            <div class="day-bar" id="sat"></div>
+            <p class="day-text">sat</p>
+          </div>
+          <div class="day-info">
+            <p class="amount">$<span class="amount-value" data-value="6">00.00</span></p>
+            <div class="day-bar" id="sun"></div>
+            <p class="day-text">sun</p>
+          </div>
+       
+    </div>
+    <hr>
+    <section class="total-container">
+      <div class="this-month">
+        <p class="p-text">Total this month</p>
+        <p class="p-num">$<span>478.33</span></p>
+      </div>
+  
+      <div class="last-month">
+        <p class="p-num"><span> +2.4</span>%</p>
+        <p class="p-text">from last month</p>
+      </div>
+    </section>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/LilithNixx">LilithNixx</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

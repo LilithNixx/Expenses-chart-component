@@ -1,0 +1,222 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  background-color: hsl(27, 66%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-balance-container {
+  width: 540px;
+  background-color: hsl(10, 79%, 65%);
+  color: hsl(33, 100%, 98%);
+  border-radius: 15px;
+  margin-top: 176px;
+  margin-bottom: 23px;
+  padding: 35px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media all and (max-width: 540px) {
+  .my-balance-container {
+    width: 100%;
+  }
+}
+.my-balance-container .balance .p-title {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.my-balance-container .balance .p-num {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.spending-container {
+  width: 540px;
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 15px;
+  padding: 40px;
+}
+@media all and (max-width: 540px) {
+  .spending-container {
+    width: 100%;
+    padding: 15px;
+  }
+}
+.spending-container h1 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+  padding-bottom: 70px;
+}
+@media all and (max-width: 540px) {
+  .spending-container h1 {
+    font-size: 1.4em;
+  }
+}
+.spending-container .bars-container {
+  color: hsl(28, 10%, 53%);
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 38px;
+  text-align: center;
+}
+.spending-container .bars-container .day-bar {
+  width: 45px;
+  height: 70px;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+@media all and (max-width: 360px) {
+  .spending-container .bars-container .day-bar {
+    width: 40px;
+  }
+}
+.spending-container .bars-container .day-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spending-container .bars-container .amount {
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: hsl(25, 47%, 15%);
+  border-radius: 5px;
+  color: hsl(27, 66%, 92%);
+  visibility: hidden;
+}
+.spending-container .bars-container .day-bar:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.spending-container hr {
+  background-color: hsl(27, 66%, 92%);
+  height: 3px;
+  border: none;
+  margin-bottom: 36px;
+}
+.spending-container .total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.spending-container .total-container .this-month .p-text {
+  margin-bottom: 5px;
+  color: hsl(28, 10%, 53%);
+}
+@media all and (max-width: 360px) {
+  .spending-container .total-container .this-month .p-text {
+    font-size: 15px;
+  }
+}
+.spending-container .total-container .this-month .p-num {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+@media all and (max-width: 360px) {
+  .spending-container .total-container .this-month .p-num {
+    font-size: 25px;
+  }
+}
+.spending-container .total-container .last-month {
+  text-align: right;
+}
+.spending-container .total-container .last-month .p-num {
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+.spending-container .total-container .last-month .p-text {
+  color: hsl(28, 10%, 53%);
+}
+@media all and (max-width: 360px) {
+  .spending-container .total-container .last-month .p-text {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

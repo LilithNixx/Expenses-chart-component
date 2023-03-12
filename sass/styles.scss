@@ -1,0 +1,171 @@
+@use 'vars';
+@use 'reset';
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    background-color: vars.$cream;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-balance-container {
+    width: 540px;
+    
+    background-color: vars.$soft-red;
+    color: vars.$very-pale-orange;
+    border-radius: 15px;
+
+    margin-top: 176px;
+    margin-bottom: 23px;
+    padding: 35px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media  all and (max-width: 540px) {
+        width: 100%;
+    }
+    .balance {
+        .p-title {
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+
+        .p-num {
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
+}
+
+.spending-container {
+    width: 540px;
+
+    background-color: vars.$very-pale-orange;
+    border-radius: 15px;
+    padding: 40px;
+
+    @media  all and (max-width: 540px) {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        font-weight: 700;
+        color: vars.$dark-brown;
+
+        padding-bottom: 70px;
+
+        @media  all and (max-width: 540px) {
+            font-size: 1.4em;
+        }
+    }
+
+    .bars-container {
+        color: vars.$medium-brown;
+     
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+
+        margin-bottom: 38px;
+        text-align: center;
+
+        .day-bar {
+            width: 45px;
+            height: 70px;
+
+            background-color: vars.$soft-red;
+            border-radius: 5px;
+
+            margin-bottom: 15px;
+
+            @media  all and (max-width: 360px) {
+                width: 40px;
+            }
+        }
+
+        .day-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .amount {
+            font-size: 0.8em;
+            margin-bottom: 5px;
+            padding: 5px;
+
+            background-color: vars.$dark-brown;
+            border-radius: 5px;
+            color: vars.$cream;
+
+            visibility: hidden;
+        }
+
+        .day-bar:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+
+    hr {
+        background-color: vars.$cream;
+        height: 3px;
+        border: none;
+        margin-bottom: 36px;
+    }
+
+    .total-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        .this-month {
+            .p-text {
+                margin-bottom: 5px;
+                color: vars.$medium-brown;
+
+                @media  all and (max-width: 360px) {
+                    font-size: 15px;
+                }
+            }
+
+            .p-num {
+                font-size: 30px;
+                font-weight: 700;
+                color: vars.$dark-brown;
+
+                @media  all and (max-width: 360px) {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .last-month {
+            text-align: right;
+            
+            .p-num {
+                font-weight: 700;
+                color: vars.$dark-brown;
+            }
+
+            .p-text {
+                color: vars.$medium-brown;
+
+                @media  all and (max-width: 360px) {
+                    font-size: 15px;
+                }
+            }
+
+        }
+    }
+}
